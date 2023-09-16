@@ -1,0 +1,1294 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+:root{
+    --color1:#19c8fa;
+}
+
+.sec1{
+    height: 800px;
+    background-color: blueviolet;
+    background-image: url(../images/bird.jpg);
+    background-size: cover;
+}
+header{
+    height: 80px;
+    width: 70%;
+    padding: 40px 15px;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+header::after{
+content: "";
+position: absolute;
+bottom: 0px;
+height: 2px;
+width: calc(100% - 30px);
+background-color: white;
+}
+header img{
+height: 60px;
+}
+header nav{
+    display: flex;
+    flex: 1;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 22px;
+    right: 150px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a{
+    padding-bottom: 32px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 3;
+}
+header nav ul li a.active,header nav ul li a:hover{
+color: var(--color1);
+border-bottom: 2px solid var(--color1);
+}
+header nav .search{
+    height: 30px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border-left: 2px solid white;
+}
+header nav .list{
+    height: 30px;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    display: none;
+}
+.sec1 .overLay{
+    height: 250px;
+    width: 700px;
+    transform: translateY(200px);
+    padding: 30px 10px 30px 150px;
+    background-color: #19c9fa88;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.sec1 .overLay h2{
+    line-height: 1.4;
+}
+.sec1 .overLay p{
+line-height: 1.7;
+}
+.sec1 .points{
+    padding-left: 50px;
+    position: absolute;
+    left: 45%;
+    bottom: 150px;
+}
+.sec1 .points li{
+    display: inline-block;
+    list-style-type: none;
+    height: 15px;
+    width: 15px;
+    border: 1px solid var(--color1);
+    border-radius: 50%;
+}
+.sec1 .points li.active{
+    background-color: #19c8fa;
+}
+/* section 2 */
+.sec2{
+    height: auto;
+    padding-top: 100px;
+}
+.sec2 .main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2 .main h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.sec2 .main p{
+    line-height: 1.7;
+    color: gray;
+    padding:0px 10px 100px;
+}
+.sec2 .services{
+    height: 350px;
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    padding-bottom: 100px;
+}
+.sec2 .services div{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.sec2 .services div img{
+    height: 50px;
+}
+.sec2 .services div .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.sec2 .services div .text h3{
+    color: #19c8fa;
+}
+.sec2 .services div .text p{
+    color: gray;
+}
+.sec2 .img{
+    height: 550px;
+    background-image: url(../images/NYC2.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.sec2 .img .overLay2{
+    height: 250px;
+    width: 700px;
+    padding-left: 15px;
+    background-color: #19c9fa88;
+    transform: translate(1203px, 150px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.sec2 .img .overLay2 ul{
+    list-style-type: none;
+    line-height: 2;
+    font-weight: 500;
+}
+/* section 3 */
+.sec3{
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec3 .main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec3 .main h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.sec3 .main p{
+    line-height: 1.7;
+    color: gray;
+    padding:0px 10px 100px;
+}
+.sec3 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sec3 ul li{
+    padding: 8px 20px;
+}
+.sec3 ul li.active , .sec3 ul li:hover{
+    color: white;
+    background-color: var(--color1);
+}
+.sec3 .galary{
+    height: 450px;
+    margin: 50px 200px;
+}
+.sec3 .galary img{
+    height: 225px;
+}
+.sec3 .btn{
+    padding: 8px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color1);
+    color: white;
+    text-transform: uppercase;    
+}
+.sec3 .img2{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/wideIMG.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sec3 .img2 h2{
+    color: white;
+    font-weight: 500;
+    background: linear-gradient(0deg, #19c9fa65,transparent);
+    border-radius: 20px;
+    padding: 5px;
+}
+.sec3 .img2 p{
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+    background: linear-gradient(0deg, #482f0c80,transparent);
+    border-radius: 10px;
+    padding: 5px;
+}
+.sec3 .img2 .btn2{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color:gray;
+    color: white;
+    text-transform: uppercase; 
+}
+/* section 4 */
+.sec4{
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.sec4 .main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec4 .main h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.sec4 .main p{
+    line-height: 1.7;
+    color: gray;
+}
+.sec4 .img3{
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/aboutIMG.jpg);
+    background-size: cover;
+}
+.sec4 .img3 .numbers{
+    height: 150px;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #19c9fa7c;
+}
+.sec4 .img3 .numbers .number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    line-height: 1.6;
+}
+.sec4 .img3 .numbers .number h2{
+    font-weight: 600;
+    font-size: 55px;
+}
+.sec4 .img3 .numbers .number p{
+    font-weight: 400;
+    font-size: 17px;
+}
+.sec4 .about{
+    height: 500px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.sec4 .about .left{
+    height: 450px;
+    width: 450px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.sec4 .about .left h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+.sec4 .about .left p{
+    text-align: center;
+    color: gray;
+    line-height: 1.7;
+}
+.sec4 .about .left .users{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sec4 .about .left .users .first{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec4 .about .left .users .first p{
+    width: 75%;
+    text-align: left;
+    color: black;
+    line-height: 1.6;
+    padding-bottom: 8px;
+    border-bottom: 1px solid gray;
+}
+.sec4 .about .left .users .first img{
+    height: 70px;
+    border-radius: 50%;
+}
+.sec4 .about .left ul li{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+.sec4 .about .left ul li.active{
+    background-color: var(--color1);
+}
+.sec4 .about .right{
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sec4 .about .right h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+.sec4 .about .right p:nth-child(2){
+    text-align: center;
+    color: gray;
+    line-height: 1.7;
+}
+.sec4 .about .right .progress{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+.sec4 .about .right .progress .p1 p{
+    line-height: 30px;
+}
+.sec4 .about .right .progress .p1 div{
+height: 25px;
+width: 100%;
+background-color: gray;
+}
+.sec4 .about .right .progress .p1 div span{
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    padding-left: 10px;
+    color: white;
+    background-color: var(--color1);
+}
+.sec4 .img4{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    background-color:#044152cb;
+}
+/* section 5 */
+.sec5{
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.sec5 .main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec5 .main h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.sec5 .main p{
+    line-height: 1.7;
+    color: gray;
+}
+.sec5 .pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.sec5 .pricing .info{
+    height: 500px;
+    width: 1100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec5 .pricing .info .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec5 .pricing .info .one div {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+    padding: 15px;
+}
+.sec5 .pricing .info .one div h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.sec5 .pricing .info .one div p{
+    font-weight: 400;
+    font-size: 15px;
+}
+.sec5 .pricing .info .one ul{
+    height: 200px;
+    margin-top: -50px;
+    color: black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sec5 .pricing .info .one ul li{
+    font-weight: 400;
+    font-size: 15px;
+    color: gray;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--color1);
+}
+.sec5 .pricing .info .one ul li:last-child{
+    padding: 20px 0px;
+    border-bottom: none;
+}
+.sec5 .pricing .info .one button{
+    padding: 6px 20px;
+    background-color: white;
+    border: 1px solid var(--color1);
+}
+.sec5 .pricing .co{
+font-weight: 500;
+font-size: 18px;
+color: gray;
+}
+.sec5 .pricing .p-btn{
+    padding: 10px 25px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+}
+.sec5 .p-img{
+height: 250px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 50px;
+background-color:#044152cb;
+}
+.sec5 .p-img input{
+    height: 50px;
+    width: 400px;
+    padding-left: 10px;
+    border: 2px solid white;
+}
+.sec5 .p-img button{
+    height: 50px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: var(--color1);
+    color: white;
+}
+.sec5 .p-img p{
+    color: white;
+    font-weight: 500;
+}
+/* section 6 */
+.sec6{
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.sec6 .main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec6 .main h2{
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.sec6 .main p{
+    line-height: 1.7;
+    color: gray;
+}
+.sec6 .contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    width: 70%;
+    gap: 50px;
+}
+.sec6 .contact input{
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+}
+.sec6 .contact textarea{
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+}
+.sec6 .contact button{
+    height: 50px;
+    width: 150px;
+    padding: 10px 25px;
+    margin-left: 460px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+}
+
+body{
+font-size: 16px;
+}
+/* Small screen */
+@media(max-width:600px){
+.sec1 header nav ul{
+    display: none;
+}
+header nav .list{
+    display: block;
+}
+header nav .list:hover + ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px ;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.593);
+    border-radius: 4px;
+    }
+    header nav ul li a.active{
+        color: white;
+        border: none;
+        }
+    header nav ul li a:hover{
+        color: var(--color1);
+        }
+.sec1 .overLay{
+    height: 200px;
+    width: 385px;
+    padding: 10px 10px 10px 50px;
+    transform: translateY(340px);
+    gap: 20px;
+}
+.sec1 .overLay h2{
+    font-size: medium;
+}
+.sec1 .overLay p{
+    font-size: small;
+}
+.sec2 .services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    padding-bottom: 100px;
+    margin-bottom: 700px;
+    width: 70%;
+    margin-left: 15%;    
+}
+.sec2 .services div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.sec2 .services div img{
+    margin-top: 40px;
+}
+.sec2 .services div .text{
+    padding:0px 15px;
+}
+.sec2 .img{
+    height: 350px;
+    background-image: url(../images/NYC2.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.sec2 .img .overLay2{
+    display: none;
+}
+.sec3{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec3 .main p{
+    padding:0px 10px 40px;
+}
+.sec3 ul{
+    gap: 11px;
+}
+.sec3 ul li{
+    padding: 5px 12px;
+}
+.sec3 .galary{
+    height: auto;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+.sec3 .galary img{
+    height: 175px;
+}
+.sec3 .btn{
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color1);
+    color: white;
+    text-transform: uppercase;    
+}
+.sec3 .img2{
+    height: 175px;
+    width: 375px;
+    background-repeat: no-repeat;
+}
+.sec3 .img2 h2{
+    font-weight: 400;
+}
+.sec3 .img2 p{
+    margin-top: 0px;
+    font-weight: 400;
+}
+.sec3 .img2 .btn2{
+    padding: 3px 15px;
+}
+.sec4{
+    padding-top: 40px;
+    gap: 20px;
+}
+.sec4 .img3{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 270px;
+}
+.sec4 .img3 .numbers{
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+.sec4 .img3 .numbers .number h2{
+    font-weight: 500;
+    font-size: 24px;
+}
+.sec4 .img3 .numbers .number p{
+    font-weight: 300;
+    font-size: 12px;
+}
+.sec4 .about{
+    height: 300px;
+    width: 70%;
+    margin-right: 40px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.sec4 .img4{
+    height: 175px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.sec4 .img4 h2{
+    padding: 12px;
+    font-size: 17px;
+}
+.sec5{
+    padding-top: 40px;
+    gap: 40px;
+}
+.sec5 .pricing{
+    gap: 40px;
+}
+.sec5 .pricing .info{
+    height: 250px;
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec5 .pricing .info .one {
+    padding-bottom: 40px;
+}
+.sec5 .pricing .info .one div {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+    padding: 30px 0px;
+}
+.sec5 .pricing .info .one div h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+.sec5 .pricing .info .one div p{
+    font-weight: 300;
+    font-size: 13px;
+}
+.sec5 .p-img{
+    height: 175px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    }
+    .sec5 .p-img input{
+        height: 20px;
+        width: 200px;
+        padding-left: 10px;
+        border: 2px solid white;
+    }
+    .sec5 .p-img button{
+        margin-top: 10px;
+        height: 20px;
+        padding: 0px 10px;
+        line-height: 10px;
+    }
+    .sec5 .p-img p{
+        color: white;
+        font-weight: 500;
+    }
+    .sec6{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .sec6 .contact{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 40px;
+    }
+    .sec6 .contact input{
+        height: 25px;
+        width: 250px;
+        padding: 10px;
+    }
+    .sec6 .contact textarea{
+        height: 200px;
+        width: 250px;
+        padding: 10px;
+    }
+    .sec6 .contact button{
+        height: 35px;
+        width: 150px;
+        padding: 10px 25px;
+        margin-left: 0px;
+        background-color: var(--color1);
+        color: white;
+        border: none;
+    }
+    
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+p{
+    font-size: 1rem;
+}
+
+}
+/* medium screen */
+@media(min-width:600px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+.sec1 header nav ul{
+    display: none;
+}
+header nav .list{
+    display: block;
+}
+header nav .list:hover + ul{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+padding: 10px ;
+position: absolute;
+top: 100%;
+left: 0px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.593);
+border-radius: 6px;
+}
+header nav ul li a.active{
+    color: white;
+    border: none;
+    }
+header nav ul li a:hover{
+    color: var(--color1);
+    }
+.sec1 .overLay{
+    height: 230px;
+    width: 500px;
+    padding: 10px 10px 10px 100px;
+    transform: translateY(340px);
+    gap: 20px;
+}
+.sec1 .overLay h2{
+    line-height: 1.4;
+}
+.sec1 .overLay h2{
+    font-size:large;
+}
+.sec1 .overLay p{
+    font-size: medium;
+}
+.sec2 .services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    padding-bottom: 100px;
+    margin-bottom: 200px;    
+}
+.sec2 .services div{
+    width: 350px;
+    padding-bottom: 10px;
+}
+.sec2 .img{
+    height: 450px;
+    background-image: url(../images/NYC2.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.sec2 .img .overLay2{
+    display: none;
+}
+.sec3{
+    padding-top: 80px;
+}
+.sec3 .main p{
+    padding:0px 10px 80px;
+}
+.sec3 ul{
+    gap: 24px;
+}
+.sec3 ul li{
+    padding: 8px 20px;
+}
+.sec3 .galary{
+    height: auto;
+    margin: 80px 150px;
+}
+.sec3 .galary img{
+    height: 200px;
+    padding-bottom: 10px;
+}
+.sec3 .btn{
+    padding: 8px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color1);
+    color: white;
+    text-transform: uppercase;    
+}
+.sec3 .img2{
+    height: 400px;
+    width: 100%;
+    background-repeat: repeat;
+    display: flex;
+}
+.sec3 .img2 h2{
+    font-weight: 500;
+    margin-top: -180px;
+}
+.sec3 .img2 p{
+    font-weight: 500;
+    margin-top: -150px;
+
+}
+.sec3 .img2 .btn2{
+    margin-top: -150px;
+    padding: 5px 30px;
+}
+.sec4{
+    padding-top: 80px;
+    gap: 35px;
+
+}
+.sec4 .img3{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.sec4 .img3 .numbers{
+    height: 150px;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sec4 .img3 .numbers .number h2{
+    font-weight: 600;
+    font-size: 55px;
+}
+.sec4 .img3 .numbers .number p{
+    font-weight: 400;
+    font-size: 17px;
+}
+.sec4 .about{
+    height: 500px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.sec4 .img4{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sec4 .img4 h2{
+    padding: 12px;
+}
+.sec5{
+    padding-top: 80px;
+    gap: 50px;
+}
+.sec5 .pricing{
+    gap: 50px;
+}
+.sec5 .p-img {
+    padding: 10px;
+}
+.sec5 .p-img button{
+    margin-top: 10px;
+}
+.sec6{
+    padding-top: 80px;
+    gap: 50px;
+}
+.sec6 .contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    width: 70%;
+    gap: 50px;
+}
+.sec6 .contact input{
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+}
+.sec6 .contact textarea{
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+}
+.sec6 .contact button{
+    height: 50px;
+    width: 150px;
+    padding: 10px 25px;
+    margin-left: 0px;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+}
+
+
+}
+
+/* Large screen */
+@media(min-width:1250px){
+    .sec1 header nav ul{
+        display: flex;
+    }
+    header nav .list{
+        display: none;
+    }
+    header nav ul li a.active,header nav ul li a:hover{
+        color: var(--color1);
+        border-bottom: 2px solid var(--color1);
+        }
+    .sec1 .overLay{
+        height: 250px;
+        width: 700px;
+        padding: 30px 10px 30px 150px;
+        gap: 25px;
+    }
+    .sec1 .overLay h2{
+        font-size: larger;
+    }
+    .sec1 .overLay p{
+        font-size: large;
+    }
+    .sec2 .services{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+        padding-bottom: 100px;
+        margin-bottom: 0px; 
+    }
+    .sec2 .services div{
+        width: 500px;
+    }
+    .sec2 .img{
+        height: 550px;
+        background-image: url(../images/NYC2.jpg) ;
+        background-position: center;
+        background-size: cover;
+    }
+    .sec2 .img .overLay2{
+        display: flex;
+    }
+    .sec3{
+        padding-top: 100px;
+    }
+    .sec3 .main p{
+        padding:0px 10px 100px;
+    }
+    .sec3 ul{
+        gap: 30px;
+    }
+    .sec3 ul li{
+        padding: 8px 20px;
+    }
+    .sec3 .galary{
+        height: auto;
+        margin: 50px 200px;
+    }
+    .sec3 .galary img{
+        height: 225px;
+    }
+    .sec3 .btn{
+        padding: 8px 30px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color1);
+        color: white;
+        text-transform: uppercase;    
+    }
+    .sec3 .img2{
+        margin-top: 100px;
+        height: 400px;
+        width: 100%;
+        background-image: url(../images/wideIMG.jpg);
+        background-repeat: repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .sec3 .img2 h2{
+        font-weight: 500;
+        margin-top: 0px;
+    }
+    .sec3 .img2 p{
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .sec3 .img2 .btn2{
+        margin-top: 0px;
+        padding: 5px 30px;
+    }
+    .sec4{
+        padding-top: 100px;
+        gap: 50px;
+
+    }
+    .sec4 .img3{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .sec4 .img3 .numbers{
+        height: 150px;
+        width: 100%;
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sec4 .img3 .numbers .number h2{
+        font-weight: 600;
+        font-size: 55px;
+    }
+    .sec4 .img3 .numbers .number p{
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .sec4 .about{
+        height: 500px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+    .sec4 .img4{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .sec4 .img4 h2{
+        padding: 12px;
+    }
+    .sec5{
+        padding-top: 100px;
+    }
+    .sec5{
+        padding-top: 80px;
+        gap: 50px;
+    }
+    .sec5 .pricing{
+        gap: 50px;
+    }
+    .sec6{
+        padding-top: 100px;
+        gap: 50px;
+    }
+    .sec6 .contact{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        width: 70%;
+        gap: 50px;
+    }
+    .sec6 .contact input{
+        height: 50px;
+        width: 500px;
+        padding: 10px;
+    }
+    .sec6 .contact textarea{
+        height: 200px;
+        width: 500px;
+        padding: 10px;
+    }
+    .sec6 .contact button{
+        height: 50px;
+        width: 150px;
+        padding: 10px 25px;
+        margin-left: 0px;
+        background-color: var(--color1);
+        color: white;
+        border: none;
+    }
+    }
